@@ -18,7 +18,7 @@ or create an emotional chatting machine[<sup>\[2\]</sup>](#f2).
 
 #### Main requirements
 
-* python 3.5.2
+* python 3.6.9
 * tensorflow 1.12.2
 * keras 2.2.4
 
