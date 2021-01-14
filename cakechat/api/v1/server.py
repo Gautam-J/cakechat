@@ -1,3 +1,4 @@
+from flask_ngrok import run_with_ngrok
 from flask import Flask, request, jsonify
 
 from cakechat.api.response import get_response
@@ -8,6 +9,7 @@ from cakechat.utils.logger import get_logger
 _logger = get_logger(__name__)
 
 app = Flask(__name__)
+run_with_ngrok(app)
 
 
 @app.route('/cakechat_api/v1/actions/get_response', methods=['POST'])
